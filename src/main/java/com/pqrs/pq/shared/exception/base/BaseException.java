@@ -1,6 +1,6 @@
 package com.pqrs.pq.shared.exception.base;
 
-import com.pqrs.pq.shared .exception.code.ExceptionCode;
+import com.pqrs.pq.shared.exception.code.ExceptionCode;
 import java.io.Serial;
 import java.time.LocalDateTime;
 import java.time.ZoneId;

@@ -8,8 +8,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 public class VillanuevaPqrsSystemApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(VillanuevaPqrsSystemApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(VillanuevaPqrsSystemApplication.class, args);
+  }
 
 }

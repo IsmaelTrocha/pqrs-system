@@ -1,6 +1,5 @@
 package com.pqrs.pq.infrastructure.repository.identificationtype;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
