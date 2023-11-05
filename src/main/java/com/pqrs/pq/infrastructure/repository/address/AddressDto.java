@@ -3,11 +3,13 @@ package com.pqrs.pq.infrastructure.repository.address;
 import com.pqrs.pq.infrastructure.repository.city.CityDto;
 import com.pqrs.pq.infrastructure.repository.customer.CustomerDto;
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,6 +19,8 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Table(name = "ADDRESS")
 public class AddressDto {
 
   @Id

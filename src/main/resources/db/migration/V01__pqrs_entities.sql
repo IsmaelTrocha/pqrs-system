@@ -46,8 +46,6 @@ CREATE TABLE WORK_DEPARTMENT(
   id bigserial primary key,
   name varchar(255) not null,
   description TEXT not null,
-  manager_name varchar(255) not null,
-  manager_email varchar(255) not null,
   department_phone varchar(255) not null,
   insertion_date TIMESTAMP DEFAULT NOW(),
   updated_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -60,6 +58,8 @@ CREATE TABLE CUSTOMER(
   phone_number varchar(255) not null,
   email_address varchar(255) not null,
   password varchar(255) not null,
+  person_information_id bigserial,
+  identification_number varchar(255) not null,
   identification_type bigserial,
   status_id bigserial,
   role varchar(255) not null,
@@ -67,7 +67,8 @@ CREATE TABLE CUSTOMER(
   creation_date timestamp DEFAULT NOW(),
   updated_date timestamp DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (status_id) REFERENCES STATUS(id),
-  FOREIGN KEY (identification_type) REFERENCES IDENTIFICATION_TYPE(id)
+  FOREIGN KEY (identification_type) REFERENCES IDENTIFICATION_TYPE(id),
+  FOREIGN KEY (person_information_id) REFERENCES PERSON_INFORMATION(id)
 );
 
 CREATE TABLE ADDRESS(

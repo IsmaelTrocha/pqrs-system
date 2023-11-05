@@ -1,6 +1,6 @@
 package com.pqrs.pq.shared.exception.base;
 
-import com.liquorsgolden.lq.shared.exception.error.ErrorResponse;
+import com.pqrs.pq.shared.exception.error.ErrorResponse;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;

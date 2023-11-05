@@ -1,7 +1,7 @@
 package com.pqrs.pq.shared.exception.message.status;
 
-import com.liquorsgolden.lq.shared.exception.base.BaseException;
-import com.liquorsgolden.lq.shared.exception.code.ExceptionCode;
+import com.pqrs.pq.shared.exception.base.BaseException;
+import com.pqrs.pq.shared.exception.code.ExceptionCode;
 import org.springframework.http.HttpStatus;
 
 public class StatusNotFoundException extends BaseException {
