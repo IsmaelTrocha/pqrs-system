@@ -4,8 +4,11 @@ import com.pqrs.pq.domain.entities.Country;
 import com.pqrs.pq.domain.services.country.GetCountryService;
 import com.pqrs.pq.infrastructure.repository.country.CountryDtoMapper;
 import com.pqrs.pq.infrastructure.repository.country.CountryRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class GetCountryByIdAdapter implements GetCountryService {
 
   private final CountryRepository countryRepository;

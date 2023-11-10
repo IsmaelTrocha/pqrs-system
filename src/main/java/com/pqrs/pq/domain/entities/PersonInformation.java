@@ -17,4 +17,5 @@ public class PersonInformation {
   private String phoneNumber;
   private String emailAddress;
   private String identificationNumber;
+
 }

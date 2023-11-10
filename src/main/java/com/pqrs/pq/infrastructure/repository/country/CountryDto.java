@@ -22,5 +22,4 @@ public class CountryDto {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
   private String name;
-
 }

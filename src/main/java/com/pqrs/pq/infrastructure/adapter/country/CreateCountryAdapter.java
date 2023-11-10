@@ -15,6 +15,8 @@ public class CreateCountryAdapter implements CreateCountryService {
   private final CountryDtoMapper countryDtoMapper;
 
 
+  // insert into country (name) values ('Colombia');
+
   @Override
   public Country createCountry(Country country) {
     return countryDtoMapper
