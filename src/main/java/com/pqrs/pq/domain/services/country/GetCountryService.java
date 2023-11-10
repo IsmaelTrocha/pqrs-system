@@ -2,7 +2,8 @@ package com.pqrs.pq.domain.services.country;
 
 import com.pqrs.pq.domain.entities.Country;
 
-public interface CreateCountryService {
+public interface GetCountryService {
 
-  Country createCountry(Country country);
+  Country getCountryById(Long countryId);
+
 }
